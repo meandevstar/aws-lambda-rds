@@ -1,0 +1,17 @@
+{
+  "name": "lambda-rds-query",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {
+    "claudia-api-builder": "^2.4.0",
+    "mysql": "^2.13.0",
+    "q": "^1.4.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "claudia:create": "claudia create --name lambda-rds-query --region us-east-1 --security-group-ids=sg-559c7f32,sg-20ec0e5f --subnet-ids=subnet-d147dffa,subnet-04b9bb3e,subnet-7ff9a408,subnet-6e592f37 --api-module app --profile default",
+    "claudia:update": "claudia update --profile default"
+  }
+}
